@@ -6,6 +6,10 @@
 	<meta name="description" content="The personal website for Gabriel Yancy, computational neuroscientist.">
 
 	<title>Gabriel Yancy</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="preload" href="personal.css" as="style">
 	<link rel="stylesheet" type="text/css" href="personal.css"/>
 	<link rel="icon" type="image/png" href="favicon.png"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -50,27 +54,70 @@
 </header>
 <main id=main>
 	<div class="body">
-		<h3 class="show-on-scroll">Presentation</h3>
-		<h4 class="show-on-scroll">"Diffusion Models Generate Stimuli Revealing V2's Representation of Natural Images," <i>First-Year Neural Science PhD Talks</i>, New York University, New York, New York. Presenter. December 2025.</h4>
-		<h4 class="show-on-scroll">"The Call of Hind's Hall: Eyewitness to the Columbia Student Encampment for Gaza," <i>Socialism Conference</i>, Chicago, Illinois. Presenter. September 2024.</h4>
-		<h4 class="show-on-scroll">"Mult-region Poisson GPFA Isolates Independent and Shared Dynamics in High Dimensional Neural Recordings," <i>Honors Senior Thesis Presentions</i>, Fordham University, New York, New York. Presentor. May 5, 2022.</h5>
-		<h5 class="show-on-scroll">A recording of this presentation can be found <a href="https://fordham.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=70d5aa6f-b000-4010-a8f6-ae8c00fabc2f">here</a>. Time: 26:50-52:35</h5>
-		<h4 class="show-on-scroll">"After Incarceration: Exploring the Community Response," <i>Fordham University</i>, New York, New York. Student Moderator. April 21, 2022.</h5>
-		<h4 class="show-on-scroll">"Multi-region Poisson GPFA isolates shared and independent latent structure in sensorimotor tasks,"<i>COSYNE</i>, Lisbon, Portugal. Presenting Author. March 2022.</h5>
-		<ul class="show-on-scroll">
-			<li style="padding-left: 5vw;"><b>Gabriel Yancy,</b> Eric Hart, Adrian Bondy, Carlos D. Brody, Alex Huk, Jonathan Pillow, Stephen Keeley</li>
-		</ul>
-		<h5 class="show-on-scroll">Additional information from the COSYNE e-program can be found <a href='https://www.world-wide.org/cosyne-22/multiregion-poisson-gpfa-isolates-shared-39b3167a/#qr-code-anchor'>here</a>.</h5>
-		<img src="./COSYNE.jpeg" class="photo show-on-scroll" style="margin-top: 2vw;">
-        <br  />
-		<h4 class="show-on-scroll">"Latent structure in multi-region neural spike train data using Gaussian Process factor analysis,' <i>Mary G. Hamilton Research Symposium</i>, Fordham University, New York, New York. Presenter. November 11, 2021.</h5>
-		<h4 class="show-on-scroll">"Anti-Blackness in the Bronx," <i>Student Spotlight Series</i>, Fordham University, Bronx, New York. Presenter. April 21, 2021.</h5>	
+		<h3 class="show-on-scroll">Presentations</h3>
+		<div class="presentation-card show-on-scroll fade-in">
+			<div class="presentation-date">Dec 2025</div>
+			<div class="presentation-content">
+				<h4>"Diffusion Models Generate Stimuli Revealing V2's Representation of Natural Images"</h4>
+				<div class="presentation-venue">First-Year Neural Science PhD Talks, New York University, New York, NY</div>
+			</div>
+		</div>
+		<div class="presentation-card show-on-scroll fade-in">
+			<div class="presentation-date">Sep 2024</div>
+			<div class="presentation-content">
+				<h4>"The Call of Hind's Hall: Eyewitness to the Columbia Student Encampment for Gaza"</h4>
+				<div class="presentation-venue">Socialism Conference, Chicago, Illinois</div>
+			</div>
+		</div>
+		<div class="presentation-card show-on-scroll fade-in">
+			<div class="presentation-date">May 2022</div>
+			<div class="presentation-content">
+				<h4>"Multi-region Poisson GPFA Isolates Independent and Shared Dynamics in High Dimensional Neural Recordings"</h4>
+				<div class="presentation-venue">Honors Senior Thesis Presentations, Fordham University, New York, NY</div>
+				<p>A recording of this presentation can be found <a href="https://fordham.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=70d5aa6f-b000-4010-a8f6-ae8c00fabc2f">here</a>. Time: 26:50-52:35</p>
+			</div>
+		</div>
+		<div class="presentation-card show-on-scroll fade-in">
+			<div class="presentation-date">Apr 2022</div>
+			<div class="presentation-content">
+				<h4>"After Incarceration: Exploring the Community Response"</h4>
+				<div class="presentation-venue">Fordham University, New York, NY (Student Moderator)</div>
+			</div>
+		</div>
+		<div class="presentation-card show-on-scroll fade-in">
+			<div class="presentation-date">Mar 2022</div>
+			<div class="presentation-content">
+				<h4>"Multi-region Poisson GPFA isolates shared and independent latent structure in sensorimotor tasks"</h4>
+				<div class="presentation-venue">COSYNE, Lisbon, Portugal (Presenting Author)</div>
+				<p><b>Gabriel Yancy,</b> Eric Hart, Adrian Bondy, Carlos D. Brody, Alex Huk, Jonathan Pillow, Stephen Keeley</p>
+				<p>Additional information from the COSYNE e-program can be found <a href='https://www.world-wide.org/cosyne-22/multiregion-poisson-gpfa-isolates-shared-39b3167a/#qr-code-anchor'>here</a>.</p>
+				<img src="./COSYNE.jpeg" class="photo show-on-scroll" style="margin-top: 1rem;">
+			</div>
+		</div>
+		<div class="presentation-card show-on-scroll fade-in">
+			<div class="presentation-date">Nov 2021</div>
+			<div class="presentation-content">
+				<h4>"Latent structure in multi-region neural spike train data using Gaussian Process factor analysis"</h4>
+				<div class="presentation-venue">Mary G. Hamilton Research Symposium, Fordham University, New York, NY</div>
+			</div>
+		</div>
+		<div class="presentation-card show-on-scroll fade-in">
+			<div class="presentation-date">Apr 2021</div>
+			<div class="presentation-content">
+				<h4>"Anti-Blackness in the Bronx"</h4>
+				<div class="presentation-venue">Student Spotlight Series, Fordham University, Bronx, NY</div>
+			</div>
+		</div>	
 	<br  />
 	<br  />        
 	<br  />
 	</div>
 </main>
+<button class="theme-toggle" aria-label="Toggle dark mode">
+	<i class="fa fa-moon"></i>
+</button>
 <script src="show_on_scroll.js"></script>
 <script src="dropdown_mobile.js"></script>
+<script src="animations.js"></script>
 </body>
 </html>

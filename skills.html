@@ -6,6 +6,10 @@
 	<meta name="description" content="The personal website for Gabriel Yancy, computational neuroscientist.">
 
 	<title>Gabriel Yancy</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="preload" href="personal.css" as="style">
 	<link rel="stylesheet" type="text/css" href="personal.css"/>
 	<link rel="icon" type="image/png" href="favicon.png"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -51,43 +55,60 @@
 <main id=main>
 	<div class="body">
 		<h3 class="show-on-scroll" id="anchorLanguages">Languages</h3>
-		<ul class="show-on-scroll">
-			<li>English fluency (Native)</li>
-			<li>Spanish fluency (written and spoken)</li>
-		</ul>
+		<div class="skill-category show-on-scroll fade-in">
+			<div class="skill-tags">
+				<span class="skill-tag">English (Native)</span>
+				<span class="skill-tag">Spanish (Fluent)</span>
+			</div>
+		</div>
 <br  />
 		<h3 class="show-on-scroll">Programming</h3>
-		<ul class="show-on-scroll">
-			<li>Python
-				<ul>
-					<li>Numpy, MatPlotLib, Pandas, Seabourne</li>
-					<li>datajoint</li>
-					<li>Jax, TensorFlow, PyTorch</li>
-					<li>PyQt</li>
-				</ul>
-			</li>
-			<li>Matlab</li>
-			<li>R</li>
-			<li>SQL</li>
-			<li>Swift</li>
-			<li>Unix Shell</li>
-			<li>HTML, CSS, JavaScript</li>
-			<li>LATEX</li>
-		</ul>
+		<div class="skills-grid">
+			<div class="skill-category show-on-scroll fade-in">
+				<h4>Python</h4>
+				<div class="skill-tags">
+					<span class="skill-tag">NumPy</span>
+					<span class="skill-tag">MatPlotLib</span>
+					<span class="skill-tag">Pandas</span>
+					<span class="skill-tag">Seaborn</span>
+					<span class="skill-tag">datajoint</span>
+					<span class="skill-tag">Jax</span>
+					<span class="skill-tag">TensorFlow</span>
+					<span class="skill-tag">PyTorch</span>
+					<span class="skill-tag">PyQt</span>
+				</div>
+			</div>
+			<div class="skill-category show-on-scroll fade-in">
+				<h4>Other Languages</h4>
+				<div class="skill-tags">
+					<span class="skill-tag">Matlab</span>
+					<span class="skill-tag">R</span>
+					<span class="skill-tag">SQL</span>
+					<span class="skill-tag">Swift</span>
+					<span class="skill-tag">Unix Shell</span>
+					<span class="skill-tag">HTML</span>
+					<span class="skill-tag">CSS</span>
+					<span class="skill-tag">JavaScript</span>
+					<span class="skill-tag">LaTeX</span>
+				</div>
+			</div>
+		</div>
 <br  />
 		<h3 class="show-on-scroll" id="anchorLabSkills">Lab Skills</h3>
-		<ul class="show-on-scroll">
-			<li>diffusion models</li>
-			<li>experimental psychophysics</li>
-			<li>population-level data visualization and analysis</li>
-			<li>dimensionality reduction methods</li>
-			<li>two-photon microscopy</li>
-			<li>presentation design</li>
-			<li>collaborative research</li>
-			<li>fly husbandry</li>
-			<li>Adobe Suite</li>
-			<li>Autodesk Fusion</li>
-		</ul>
+		<div class="skill-category show-on-scroll fade-in">
+			<div class="skill-tags">
+				<span class="skill-tag">Diffusion Models</span>
+				<span class="skill-tag">Experimental Psychophysics</span>
+				<span class="skill-tag">Population-level Analysis</span>
+				<span class="skill-tag">Dimensionality Reduction</span>
+				<span class="skill-tag">Two-Photon Microscopy</span>
+				<span class="skill-tag">Presentation Design</span>
+				<span class="skill-tag">Collaborative Research</span>
+				<span class="skill-tag">Fly Husbandry</span>
+				<span class="skill-tag">Adobe Suite</span>
+				<span class="skill-tag">Autodesk Fusion</span>
+			</div>
+		</div>
 <br  />
 		<h3 class="show-on-scroll" id="anchorAchievements">Achievements</h3>
 		<ul class="show-on-scroll">
@@ -118,7 +139,11 @@
         <br  />
 	</div>
 </main>
+<button class="theme-toggle" aria-label="Toggle dark mode">
+	<i class="fa fa-moon"></i>
+</button>
 <script src="show_on_scroll.js"></script>
 <script src="dropdown_mobile.js"></script>
+<script src="animations.js"></script>
 </body>
 </html>

@@ -6,6 +6,10 @@
 	<meta name="description" content="The personal website for Gabriel Yancy, computational neuroscientist.">
 
 	<title>Gabriel Yancy</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+	<link rel="preload" href="personal.css" as="style">
 	<link rel="stylesheet" type="text/css" href="personal.css"/>
 	<link rel="icon" type="image/png" href="favicon.png"/>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
@@ -51,60 +55,124 @@
 <main id=main>
 	<div class="body">
 		<h3 class="show-on-scroll" id="anchorProjects">Projects</h3>
-		<h4 class="show-on-scroll">Leveraging Stimuli Generated from Diffusion Models to Explore Representation in V2</h4>
-		<h5 class="show-on-scroll">NYU Simoncelli Lab (Sept 2024 - present)</h5>
-		<p class="show-on-scroll">Developing methods for controlled image synthesis and analysis of corresponding neural population recordings. Advisor: Dr. Eero Simoncelli, Silver Professor, Center for Neural Science, New York University.</p>
-		<h4 class="show-on-scroll">Scale-Dependence of Naturalistic Object Recognition</h4>
-		<h5 class="show-on-scroll">NYU Winawer Lab (June 2025 - Jan 2026)</h5>
-		<p class="show-on-scroll">Used psychophysics and critical bandwidth masking to assess human object recognition across scales. Advisor: Dr. Jon Winawer, Professor, Department of Psychology, New York University.</p>
-		<h4 class="show-on-scroll">Color Sensitivity of γD Kenyon Cells</h4>
-		<h5 class="show-on-scroll">Columbia Behnia Lab (Sept 2022 - May 2024)</h5>
-		<p class="show-on-scroll">Used two-photon imaging to analyze chromatic responses of neurons and characterize population encoding. Advisor: Dr. Rudy Behnia, Assistant Professor, Zuckerman Institute, Columbia University.</p>
-		<h4 class="show-on-scroll">Sensory Representations of the yd Kenyon Cells of the Drosophila Mushroom Body</h4>
-		<p class="show-on-scroll">Ongoing research being conducted at the Behnia lab as a research assistant.</p>
-		<h4 class="show-on-scroll">Multi-region Poisson GPFA isolates shared and independent latent structure in sensorimotor tasks (2022)</h4>
-		<h5 class="show-on-scroll"><b>Gabriel Yancy,</b> Eric Hart, Adrian Bondy, Carlos D. Brody, Alex Huk, Jonathan Pillow, Stephen Keeley</h5>
-		<p class="show-on-scroll">Presenting author for poster at Computational and Systems Neuroscience (COSYNE) conference held in Lisbon, Portugal. In this work, 
-			we use a multi-region latent variable model (LVM) to identify computations shared-across and independent-to specific brain regions in spiking neural population 
-			data from two different animals. Here, we use a multi-region latent variable model (LVM) to identify computations shared-across and independent-to specific 
-			brain regions in spiking neural population data from two different animals. Our model is an extension of Gaussian Process Factor Analysis with Poisson observations (PGPFA) 
-			that separates per-trial neural activity into shared and independent components via a partitioned linear mapping. It characterizes region-specific and global variability 
-			based on latent functions characterized only by their smoothness. We use this multi-region PGPFA model to understand shared and independent latent structure during 
-			sensorimotor tasks across two neural datasets: one, lateral intra-parietal area (LIP) and frontal eye field (FEF) electrophysiological recordings during a delayed target 
-			visual task in macaques, and the second, silicon probe (Neuropixels) recordings from anterior and posterior striatum during an evidence accumulation task in rats.</p>
-		<h4 class="show-on-scroll">BarryBot: An Artificial Intelligence Designed to Play Star Craft (2017)</h4>
-		<h5 class="show-on-scroll">Chen, Doshi, Heckel, A. Li, E. Li, T. Li, Shanehsazzadeh, Woessner, <b>Yancy,</b> Zhou</h5>
-		<p class="show-on-scroll">Published in <i>Journal of the Pennsylvania Governor's School for the Sciences</i> (PGSS) after participating in project developed through Carnegie Mellon University. Project was conducted as part of CS track and used Python AI design to optimize for an imperfect information game.</p>
+		<div class="project-card show-on-scroll fade-in">
+			<h4>Leveraging Stimuli Generated from Diffusion Models to Explore Representation in V2</h4>
+			<h5>NYU Simoncelli Lab (Sept 2024 - present)</h5>
+			<p>Developing methods for controlled image synthesis and analysis of corresponding neural population recordings. Advisor: Dr. Eero Simoncelli, Silver Professor, Center for Neural Science, New York University.</p>
+			<div class="project-meta">
+				<span class="project-tag">Current</span>
+				<span class="project-tag">Diffusion Models</span>
+				<span class="project-tag">V2</span>
+			</div>
+		</div>
+		<div class="project-card show-on-scroll fade-in">
+			<h4>Scale-Dependence of Naturalistic Object Recognition</h4>
+			<h5>NYU Winawer Lab (June 2025 - Jan 2026)</h5>
+			<p>Used psychophysics and critical bandwidth masking to assess human object recognition across scales. Advisor: Dr. Jon Winawer, Professor, Department of Psychology, New York University.</p>
+			<div class="project-meta">
+				<span class="project-tag">Psychophysics</span>
+				<span class="project-tag">Object Recognition</span>
+			</div>
+		</div>
+		<div class="project-card show-on-scroll fade-in">
+			<h4>Color Sensitivity of γD Kenyon Cells</h4>
+			<h5>Columbia Behnia Lab (Sept 2022 - May 2024)</h5>
+			<p>Used two-photon imaging to analyze chromatic responses of neurons and characterize population encoding. Advisor: Dr. Rudy Behnia, Assistant Professor, Zuckerman Institute, Columbia University.</p>
+			<div class="project-meta">
+				<span class="project-tag">Two-Photon Imaging</span>
+				<span class="project-tag">Drosophila</span>
+			</div>
+		</div>
+		<div class="project-card show-on-scroll fade-in">
+			<h4>Sensory Representations of the yd Kenyon Cells of the Drosophila Mushroom Body</h4>
+			<p>Ongoing research being conducted at the Behnia lab as a research assistant.</p>
+			<div class="project-meta">
+				<span class="project-tag">Ongoing</span>
+			</div>
+		</div>
+		<div class="project-card show-on-scroll fade-in">
+			<h4>Multi-region Poisson GPFA isolates shared and independent latent structure in sensorimotor tasks (2022)</h4>
+			<h5><b>Gabriel Yancy,</b> Eric Hart, Adrian Bondy, Carlos D. Brody, Alex Huk, Jonathan Pillow, Stephen Keeley</h5>
+			<p>Presenting author for poster at Computational and Systems Neuroscience (COSYNE) conference held in Lisbon, Portugal. In this work, 
+				we use a multi-region latent variable model (LVM) to identify computations shared-across and independent-to specific brain regions in spiking neural population 
+				data from two different animals. Here, we use a multi-region latent variable model (LVM) to identify computations shared-across and independent-to specific 
+				brain regions in spiking neural population data from two different animals. Our model is an extension of Gaussian Process Factor Analysis with Poisson observations (PGPFA) 
+				that separates per-trial neural activity into shared and independent components via a partitioned linear mapping. It characterizes region-specific and global variability 
+				based on latent functions characterized only by their smoothness. We use this multi-region PGPFA model to understand shared and independent latent structure during 
+				sensorimotor tasks across two neural datasets: one, lateral intra-parietal area (LIP) and frontal eye field (FEF) electrophysiological recordings during a delayed target 
+				visual task in macaques, and the second, silicon probe (Neuropixels) recordings from anterior and posterior striatum during an evidence accumulation task in rats.</p>
+			<div class="project-meta">
+				<span class="project-tag">COSYNE 2022</span>
+				<span class="project-tag">GPFA</span>
+				<span class="project-tag">Multi-region</span>
+			</div>
+		</div>
+		<div class="project-card show-on-scroll fade-in">
+			<h4>BarryBot: An Artificial Intelligence Designed to Play Star Craft (2017)</h4>
+			<h5>Chen, Doshi, Heckel, A. Li, E. Li, T. Li, Shanehsazzadeh, Woessner, <b>Yancy,</b> Zhou</h5>
+			<p>Published in <i>Journal of the Pennsylvania Governor's School for the Sciences</i> (PGSS) after participating in project developed through Carnegie Mellon University. Project was conducted as part of CS track and used Python AI design to optimize for an imperfect information game.</p>
+			<div class="project-meta">
+				<span class="project-tag">AI</span>
+				<span class="project-tag">Python</span>
+			</div>
+		</div>
 <br  />
 		<h3 class="show-on-scroll">Publications</h3>
 		<h4 class="show-on-scroll">2026</h4>
-		<h5 class="show-on-scroll">N Agarwal*, <b>G Yancy*</b>, Z Kadkhodaie, JD Lieber, JA Movshon, and E Simoncelli (2026)</h5>
-		<p class="show-on-scroll">"A generative diffusion model reveals V2's representation of natural images." <i>COSYNE 2026</i>. * Equal Contribution</p>
-		<h5 class="show-on-scroll">I Ganguly, A Liu, A Gonzalez-Segarra, R Mora, <b>G Yancy</b>, AS Diez, V Dalstein, MG Singh, EN Hardy, A Chung, G Alarcon, ML Galloway, A Prakash, K Monzavi, A Litwin-Kumar, and R Behnia (2026)</h5>
-		<p class="show-on-scroll">"Neural mechanisms underlying multisensory associative learning." <i>COSYNE 2026</i>.</p>
+		<div class="publication-card show-on-scroll fade-in">
+			<div class="publication-header">
+				<div>
+					<div class="authors">N Agarwal*, <span class="highlight">G Yancy*</span>, Z Kadkhodaie, JD Lieber, JA Movshon, and E Simoncelli (2026)</div>
+					<div class="publication-title">"A generative diffusion model reveals V2's representation of natural images."</div>
+					<div class="publication-venue">COSYNE 2026</div>
+				</div>
+				<span class="publication-badge equal-contribution">Equal Contribution</span>
+			</div>
+		</div>
+		<div class="publication-card show-on-scroll fade-in">
+			<div class="authors">I Ganguly, A Liu, A Gonzalez-Segarra, R Mora, <span class="highlight">G Yancy</span>, AS Diez, V Dalstein, MG Singh, EN Hardy, A Chung, G Alarcon, ML Galloway, A Prakash, K Monzavi, A Litwin-Kumar, and R Behnia (2026)</div>
+			<div class="publication-title">"Neural mechanisms underlying multisensory associative learning."</div>
+			<div class="publication-venue">COSYNE 2026</div>
+		</div>
 <br  />
 		<h3 class="show-on-scroll" id="anchorExperience">Experience</h3>
-		<h4 class="show-on-scroll">Zuckerman Institute (Summer 2022-)</h4>
-		<h5 class="show-on-scroll">Research Assistant of Dr. Rudy Behnia</h5>
-		<p class="show-on-scroll">Working to identify the mechanisms behind color learning and multi-sensory memory formation in the fruit fly with an emphasis on sensory representations in the Kenyon cells of the mushroom body.</p>
-		<h4 class="show-on-scroll">Fordham University (Summer 2021-Summer 2022)</h4>
-		<h5 class="show-on-scroll">Research Assistant of Dr. Stephen Keeley</h5>
-		<p class="show-on-scroll">Assisting Dr. Stephen Keeley to develop dimensionality reduction techniques for high dimension multi-region neural data. Work consists of furthering modeling under the category of Gaussian Process Factor Analysis (GPFA) and linear dynamical systems (LDS) to improve low-dimensional representations of novel contemporary neural datasets (i.e., NeuroPixel recordings)</p>
-		<h4 class="show-on-scroll">CVS Pharmacy (Feb 2021-Dec 2021)</h4>
-		<h5 class="show-on-scroll">Pharmacy Technician</h5>
-		<p class="show-on-scroll">Completed technician responsibilities such as stocking, assembling, and distributing medications and helping both health care providers and patients in person and by phone by answering questions and requests. Work was done in a fully bilingual environment requiring equal use of English and Spanish for all duties.</p>
-		<h4 class="show-on-scroll">Fordham University (Spring 2021)</h4>
-		<h5 class="show-on-scroll">Research Assistant of Dr. Ayala Fader</h5>
-		<p class="show-on-scroll">Assisted Dr. Ayala Fader to construct a grant application for the proposed Demystifying Language Program (DLP). Compiled, read, and took notes on a variety of texts relating to the topics of critical pedagogy, language and social justice, and ethnographic writing. The resulting application was approved for funding and received $20,000 from The Wenner-Gren Foundation for development of the program.</p>
-		<h4 class="show-on-scroll">Duolingo Student Tech Initiative (2016)</h4>
-		<h5 class="show-on-scroll">Product Tester</h5>
-		<p class="show-on-scroll">Participated in product reviews and brainstorming for application development.</p>
-		<h4 class="show-on-scroll">Hawthorne Avenue Presbyterian Church (2015-2017)</h4>
-		<h5 class="show-on-scroll">Church Accompanist</h5>
-		<p class="show-on-scroll">Lead rehearsals by demonstrating specific song parts. Consulted with directors to determine musical selections to align with the artistic and religious visions for each week. Accompanied services on Piano and Organ as part of worship team.</p>
-		<h4 class="show-on-scroll">Self-Employed (2014-2018)</h4>
-		<h5 class="show-on-scroll">Freelance Musician</h5>
-		<p class="show-on-scroll">Provided musical background for live shows such as ballets, operas, musical theatre and cabarets. Coached soloists and ensembles for specific parts. Collaborated with performers to determine and achieve desired sound for production.</p>
+		<div class="timeline">
+			<div class="timeline-item current show-on-scroll fade-in">
+				<h4>Zuckerman Institute (Summer 2022-)</h4>
+				<h5>Research Assistant of Dr. Rudy Behnia</h5>
+				<p>Working to identify the mechanisms behind color learning and multi-sensory memory formation in the fruit fly with an emphasis on sensory representations in the Kenyon cells of the mushroom body.</p>
+			</div>
+			<div class="timeline-item show-on-scroll fade-in">
+				<h4>Fordham University (Summer 2021-Summer 2022)</h4>
+				<h5>Research Assistant of Dr. Stephen Keeley</h5>
+				<p>Assisting Dr. Stephen Keeley to develop dimensionality reduction techniques for high dimension multi-region neural data. Work consists of furthering modeling under the category of Gaussian Process Factor Analysis (GPFA) and linear dynamical systems (LDS) to improve low-dimensional representations of novel contemporary neural datasets (i.e., NeuroPixel recordings)</p>
+			</div>
+			<div class="timeline-item show-on-scroll fade-in">
+				<h4>CVS Pharmacy (Feb 2021-Dec 2021)</h4>
+				<h5>Pharmacy Technician</h5>
+				<p>Completed technician responsibilities such as stocking, assembling, and distributing medications and helping both health care providers and patients in person and by phone by answering questions and requests. Work was done in a fully bilingual environment requiring equal use of English and Spanish for all duties.</p>
+			</div>
+			<div class="timeline-item show-on-scroll fade-in">
+				<h4>Fordham University (Spring 2021)</h4>
+				<h5>Research Assistant of Dr. Ayala Fader</h5>
+				<p>Assisted Dr. Ayala Fader to construct a grant application for the proposed Demystifying Language Program (DLP). Compiled, read, and took notes on a variety of texts relating to the topics of critical pedagogy, language and social justice, and ethnographic writing. The resulting application was approved for funding and received $20,000 from The Wenner-Gren Foundation for development of the program.</p>
+			</div>
+			<div class="timeline-item show-on-scroll fade-in">
+				<h4>Duolingo Student Tech Initiative (2016)</h4>
+				<h5>Product Tester</h5>
+				<p>Participated in product reviews and brainstorming for application development.</p>
+			</div>
+			<div class="timeline-item show-on-scroll fade-in">
+				<h4>Hawthorne Avenue Presbyterian Church (2015-2017)</h4>
+				<h5>Church Accompanist</h5>
+				<p>Lead rehearsals by demonstrating specific song parts. Consulted with directors to determine musical selections to align with the artistic and religious visions for each week. Accompanied services on Piano and Organ as part of worship team.</p>
+			</div>
+			<div class="timeline-item show-on-scroll fade-in">
+				<h4>Self-Employed (2014-2018)</h4>
+				<h5>Freelance Musician</h5>
+				<p>Provided musical background for live shows such as ballets, operas, musical theatre and cabarets. Coached soloists and ensembles for specific parts. Collaborated with performers to determine and achieve desired sound for production.</p>
+			</div>
+		</div>
 <br  />
 		<h3 class="show-on-scroll" id="anchorWebDesign">Web Design</h3>
 		<h4 class="show-on-scroll">Personal Site (2022-) [ this site :) ]</h4>
@@ -136,7 +204,11 @@
 		<br  />
 	</div>
 </main>
+<button class="theme-toggle" aria-label="Toggle dark mode">
+	<i class="fa fa-moon"></i>
+</button>
 <script src="show_on_scroll.js"></script>
 <script src="dropdown_mobile.js"></script>
+<script src="animations.js"></script>
 </body>
 </html>
